@@ -80,6 +80,6 @@ Dashboard con estadísticas
 
 API REST para tareas
 
-👩‍💻 Autor
+👩‍💻Autor
 
 Proyecto desarrollado por Jose Ricardo Casallas como muestra de habilidades en desarrollo web con Python y Flask.
