@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Mis Tareas</h2>
+<form method='POST' action='/add'>
+    <input class='form-control' name='title' placeholder='Nueva tarea' required>
+    <button class='btn btn-primary mt-2'>Agregar</button>
+</form>
+
+<ul class="list-group mt-4">
+{% for t in tasks %}
+<li class="list-group-item d-flex justify-content-between">
+    {% if t[2] %}
+        <s>{{ t[1] }}</s>
+    {% else %}
+        {{ t[1] }}
+    {% endif %}
+    <div>
+        <a href="/complete/{{ t[0] }}" class="btn btn-success btn-sm">✔</a>
+        <a href="/delete/{{ t[0] }}" class="btn btn-danger btn-sm">🗑</a>
+    </div>
+</li>
+{% endfor %}
+</ul>
+{% endblock %}
