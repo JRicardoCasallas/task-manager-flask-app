@@ -46,7 +46,7 @@ project/
 
 Clonar el repositorio:
 
-git clone 
+git clone https://github.com/JRicardoCasallas/task-manager-flask-app.git
 
 
 Entrar al proyecto:
